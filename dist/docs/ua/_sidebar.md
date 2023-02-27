@@ -1,0 +1,14 @@
+- Основна інформація
+    - [Головна](/#/)
+    - [Про продукт](../ua/about/about.md)
+    - [Переваги нашого рішення](../ua/about/pros_cons.md)
+    - [Що таке MODBUS?](../ua/about/modbus.md)
+- Швидкий старт
+    - [Перший запуск](../ru/fast_setup/first_start.md)
+- Телеграм-бот
+    - [Основные команды](ru/telegram/telegram.md)
+- Особистий кабінет
+    - [Первый запуск](../ru/fast_setup/first_start.md)
+- Юриспуденція
+    - [Правила користування / Договір оферти](../ua/law/term_of_use.md)
+    - [Доставка](../ua/law/delivery.md)
