@@ -254,18 +254,25 @@
 
         <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner-bg.svg)">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
                         <div class="header-hero-content text-center">
-                            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                                <img src="assets/images/logo-text.svg" alt="Логотип Solar Control">
-                            </h3>
-                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                                Контроль
-                                ваших домашніх СЕС</h2>
-                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Моніторинг
-                                MODBUS-сумісних інверторів. Статистика за день, оповіщення в разі помилок. Підтримка
-                                декількох інверторів різних виробників одночасно</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-8 ">
+                                    <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                                        <img src="assets/images/logo-text.svg" alt="Логотип Solar Control" style="left:0;;" width="320" height="50">
+                                    </h3>
+                                    <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s" style="left:0;float:left;font-size:30px;">
+                                        Контрольваших домашніх СЕС</h2>
+                                    <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s" style="position:relative;left:0;font-size:20px;text-align:left;">Моніторинг
+                                        MODBUS-сумісних інверторів. Статистика за день, оповіщення в разі помилок. Підтримка
+                                            декількох інверторів різних виробників одночасно</p>
+                                </div> 
+                                <div class="col-lg-6 col-md-6 col-sm-8 "style="position:relative;right:0;">
+                                    <img src="assets/images/header-hero.png" alt="інтерфейс Solar Control" width="540" height="300" style="float:left;">
+                                    <img src="assets/images/bot.png" alt="бот Solar Control"    width="174" height="300">
+                                </div>
+                            </div>
+                            
                             <script data-b24-form="click/4/dsgt6t" data-skip-moving="true"> (function (w, d, u) { var s = d.createElement('script'); s.async = true; s.src = u + '?' + (Date.now() / 180000 | 0); var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h); })(window, document, 'https://cdn.bitrix24.ua/b19046463/crm/form/loader_4.js');
                             </script>
                             <script> (function () {
@@ -280,16 +287,7 @@
                                     }
                                 })()</script>
                         </div> <!-- header hero content -->
-                    </div>
-                </div> <!-- row -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s"
-                            data-wow-delay="1.4s">
-                            <img src="assets/images/header-hero.png" alt="інтерфейс Solar Control">
-                        </div> <!-- header hero image -->
-                    </div>
-                </div> <!-- row -->
+
             </div> <!-- container -->
             <div id="particles-1" class="particles"></div>
         </div> <!-- header hero -->
@@ -1137,14 +1135,24 @@
                         </div>
                     </div>
                     <div class="col-lg-6 ">
-                        <div class="subscribe-form mt-50">
+                        <div class="subscribe-form mt-50" id="form">
                             <!-- SendPulse Simple Subscription Form -->
                             <form
                                 action="https://login.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjo3ODQyMDM4LCJhZGRyZXNzX2Jvb2tfaWQiOjEwMDA0LCJsYW5nIjoicnUifQ=="
                                 method="post">
-                                <input type="email" placeholder="Введіть свій email" required name="email">
+                                <p>
+                                    <input type="text" placeholder="NAME" id="name" name="name"/>
+                                </p>
+                                <p>
+                                    <input type="email" placeholder="EMAIL" id="email" name="email"/>
+                                </p>
+                                <p>
+                                    <input type="tel" placeholder="telephone" id="phone" name="phone"/>
+                                </p>
+                                <p>
+                                    <button class="main-btn" style="position: relative;top:10px">Залишити заявку</button>
+                                </p>
                                 <input type="hidden" name="sender" value="tech@pm-dt.com">
-                                <button class="main-btn">Підписатися</button>
                             </form>
                             <!-- SendPulse Simple Subscription Form -->
 
